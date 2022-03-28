@@ -12,7 +12,6 @@ Creating a README generator which can quickly and easily create a README file by
 - [License](#license)
 - [Contributing](#contributing)
 - [Tests](#tests)
-- [Link](#link)
 - [Questions](#questions)
 ## Installation
 
@@ -48,11 +47,6 @@ f you would like to contribute to this project feel free to reach out at the ema
 ## Tests
 
 none
-
-## Link
-
-[Link to finshed webpage](#)
-
 
 ## Questions
 
