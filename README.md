@@ -1,9 +1,9 @@
 
-  # Title (insert)
+  # Title
 
   ## Description
 
-  (insert)
+  description
 
   ## Table of Contents
 
@@ -17,11 +17,11 @@
 
   ## Installation
   
-  (insert)
+  steps
 
   ## Usage
 
-  (insert)
+  instructions
 
   ## Credits (optional)
 
@@ -29,18 +29,20 @@
 
   ## License
 
-  (insert)
+  MIT License
 
   ## Contributing
 
-  (insert)
+  guidelines
 
   ## Tests
 
-  (insert)
+  test
 
   ## Questions
 
-  (insert)
+  name
+
+  email
 
   

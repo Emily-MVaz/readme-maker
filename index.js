@@ -31,7 +31,7 @@ const makeReadme = new Promise((res, rej) => {
         name: "license",
         message: "Please choose a license fr your Project:",
         choices: [
-          "Apache 2.0 ",
+          "Apache 2.0",
           "Boost Software  1.0",
           "BSD 3-Clause ",
           "BSD 2-Clause ",
@@ -83,20 +83,23 @@ const makeReadme = new Promise((res, rej) => {
       },
       {
         type: "input",
-        name: "linkedIn",
+        name: "email",
         message: "Please enter your email address:",
       },
     ])
   );
 });
 
+
+
+
 makeReadme.then((data) => {
   const readMe = `
-  # Title (insert)
+  # ${data.title}
 
   ## Description
 
-  (insert)
+  ${data.description}
 
   ## Table of Contents
 
@@ -110,11 +113,11 @@ makeReadme.then((data) => {
 
   ## Installation
   
-  (insert)
+  ${data.install}
 
   ## Usage
 
-  (insert)
+  ${data.usageInfo}
 
   ## Credits (optional)
 
@@ -122,19 +125,21 @@ makeReadme.then((data) => {
 
   ## License
 
-  (insert)
+  ${data.license} License
 
   ## Contributing
 
-  (insert)
+  ${data.contribution}
 
   ## Tests
 
-  (insert)
+  ${data.test}
 
   ## Questions
 
-  (insert)
+  ${data.github}
+
+  ${data.email}
 
   `;
 
@@ -143,6 +148,6 @@ makeReadme.then((data) => {
       return console.log(err);
     }
 
-    console.log("Success!")
-  })
+    console.log("Done!");
+  });
 });

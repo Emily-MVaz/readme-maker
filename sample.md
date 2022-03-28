@@ -1,13 +1,8 @@
-# Title <Your-Project-Title>
+# Title <Your-Project-Title> badge [![License:(name)](shields.io url)](license url)
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+Provide a short description explaining the what, why, and how of your project. 
 
 ## Table of Contents
 
@@ -18,8 +13,6 @@ Provide a short description explaining the what, why, and how of your project. U
 - [Contributing](#contributing)
 - [Tests](#tests)
 - [Questions](#questions)
-
-high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
 
 ## Installation
 
