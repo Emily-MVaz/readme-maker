@@ -25,7 +25,11 @@ Creating a README generator which can quickly and easily create a README file by
 
 ## Usage
 
+Inputting prompted information into the terminal: 
+https://user-images.githubusercontent.com/98716344/160328155-8eb1e278-3752-4138-a62f-27239e21b19b.mp4
 
+Results:
+https://user-images.githubusercontent.com/98716344/160328177-b6cb1c1d-2ae3-4c53-9578-3009992b37ee.mp4
 
 
 ## Credits
