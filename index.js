@@ -31,38 +31,24 @@ const makeReadme = new Promise((res, rej) => {
         name: "license",
         message: "Please choose a license fr your Project:",
         choices: [
+          "AGPL v3",
           "Apache 2.0",
-          "Boost Software  1.0",
-          "BSD 3-Clause ",
-          "BSD 2-Clause ",
+          "Artistic-2.0",
+          "BSD 3-Clause",
+          "BSD 2-Clause",
           "CC0",
-          "Attribution 4.0 International",
-          "Attribution-ShareAlike 4.0 International",
-          "Attribution-NonCommercial 4.0 International",
-          "Attribution-NoDerivates 4.0 International",
-          "Attribution-NonCommmercial-ShareAlike 4.0 International",
-          "Attribution-NonCommercial-NoDerivatives 4.0 International",
           "Eclipse Public License 1.0",
+          "FDL v1.3",
           "GPL v3",
           "GPL v2",
-          "AGPL v3",
-          "LGPL v3",
-          "FDL v1.3",
-          "Hippocratic 2.1",
-          "Hippocratic 3.0",
           "IPL 1.0",
           "ICL",
+          "LGPL v3",
           "MIT",
           "MPL 2.0",
-          "Open Data Commons Attribution",
-          "Open Database License (ODbL)",
-          "Public Domain Dedication and License (PDDL)",
-          "The Perl License",
-          "The Artistic License 2.0",
-          "Open Font-1.1",
+          "ODbL",
+          "PDDL",
           "Unlicense",
-          "WTFPL",
-          "Zlib",
         ],
       },
       {
@@ -90,19 +76,20 @@ const makeReadme = new Promise((res, rej) => {
   );
 });
 
-
-
-
 makeReadme.then((data) => {
   const readMe = `
-  # ${data.title}
-
+  # ${data.title} 
+  <a href="https://img.shields.io/badge/License-${data.license}-brightgreen"><img src="https://img.shields.io/badge/License-${data.license}-brightgreen"></a>
+ 
+  
   ## Description
 
   ${data.description}
-
+  
+  
+  
   ## Table of Contents
-
+  
   - [Installation](#installation)
   - [Usage](#usage)
   - [Credits](#credits)
@@ -110,37 +97,33 @@ makeReadme.then((data) => {
   - [Contributing](#contributing)
   - [Tests](#tests)
   - [Questions](#questions)
-
+  
   ## Installation
   
   ${data.install}
-
+  
   ## Usage
-
+  
   ${data.usageInfo}
-
-  ## Credits (optional)
-
-  (insert)
-
+  
   ## License
-
-  ${data.license} License
-
+  
+  Licensed under the ${data.license} License
+  
   ## Contributing
-
+  
   ${data.contribution}
-
+  
   ## Tests
-
+  
   ${data.test}
-
+  
   ## Questions
-
-  ${data.github}
-
-  ${data.email}
-
+  
+  Visit my [GitHub](https://github.com/${data.github})
+  
+  If you have any additional questions please email me at ${data.email}
+  
   `;
 
   fs.writeFile("README.md", readMe, (err) => {
